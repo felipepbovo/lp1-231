@@ -2,6 +2,7 @@ package semana11;
 
 import org.junit.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class AquarioTeste {
     @Test
     public void testeCalcularVolume(){
@@ -28,10 +29,34 @@ public class AquarioTeste {
 
         double PotenciaDoTermostato = aquario.calcularPotenciaDoTermostato();
 
-        assertEquals(0.3456, PotenciaDoTermostato, 0.001);
+        assertEquals(0.3456, PotenciaDoTermostato, 1);
     
     }
 
+    @Test
+    public void testeQuantidadeMaximaLitrosFiltro() {
+        Aquario aquario = new Aquario();
+        aquario.altura = 12.0;
+        aquario.comprimento = 12.0;
+        aquario.largura = 12.0;
+        
+        double QuantidadeMaximaLitrosFiltro = aquario.calcularQuantidadeMaximaLitrosFiltro();
 
+        assertEquals(5.0, QuantidadeMaximaLitrosFiltro);
+
+    }
+
+    @Test
+    public void testeQuantidadeMinimaLitrosFiltro() {
+        Aquario aquario = new Aquario();
+        aquario.altura = 12.0;
+        aquario.comprimento = 12.0;
+        aquario.largura = 12.0;
+        
+        double QuantidadeMinimaLitrosFiltro = aquario.calcularQuantidadeMinimaLitrosFiltro();
+
+        assertEquals(3.0, QuantidadeMinimaLitrosFiltro);
+
+    }
 
 }

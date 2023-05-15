@@ -139,6 +139,6 @@ public class calculadoraTeste {
 
         double soma = Calculadora.dividir(n1, n2);
 
-        assertEquals(0, soma);
+        assertEquals(0.0, soma);
     }
 }

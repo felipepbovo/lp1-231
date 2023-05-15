@@ -1,5 +1,3 @@
-//métodos calcularVolume, calcularPotenciaDoTermostato e calcularQuantidadeLitrosFiltro.
-//Aquario que possui os atributos comprimento, altura e largura
 package semana11;
 
 public class ProgramaEx01{
