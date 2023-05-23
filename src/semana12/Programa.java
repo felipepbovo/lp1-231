@@ -36,8 +36,6 @@ public class Programa {
         System.out.println(aq1.calcularQuantidadeMaximaLitrosFiltro());
         System.out.println(aq1.calcularQuantidadeMinimaLitrosFiltro());
 
-        System.out.println("aqui começa o aq2");
-        
         System.out.println(aq2.calcularVolume());
         System.out.println(aq2.calcularQuantidadeMaximaLitrosFiltro());
         System.out.println(aq2.calcularQuantidadeMinimaLitrosFiltro());

@@ -9,6 +9,9 @@ public class Pessoa {
         this.peso = peso;
 }
 
+public Pessoa() {
+    }
+
 public double calcularIMC() {
     return peso / ((altura * altura)/10000);
 }
