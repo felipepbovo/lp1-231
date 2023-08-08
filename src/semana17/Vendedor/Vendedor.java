@@ -1,22 +1,24 @@
-package semana17;
-public class Vendedor {
+package semana17.Vendedor;
+
+public  class Vendedor {
 
     protected String nome;
     protected double vendas;
     protected double comissao;
 
-    public Vendedor(String nome, double vendas, double comissao) {
+    public Vendedor (String nome, double vendas, double comissao){
         this.nome = nome;
         this.vendas = vendas;
         this.comissao = comissao;
+
     }
 
-    public double obterSalario() {
+    public double obterSalario(){
         return vendas * (comissao/100);
     }
 
     public String getNome() {
-        return this.nome;
+        return nome;
     }
 
     public void setNome(String nome) {
@@ -24,7 +26,7 @@ public class Vendedor {
     }
 
     public double getVendas() {
-        return this.vendas;
+        return vendas;
     }
 
     public void setVendas(double vendas) {
@@ -32,10 +34,11 @@ public class Vendedor {
     }
 
     public double getComissao() {
-        return this.comissao;
+        return comissao;
     }
 
     public void setComissao(double comissao) {
-		this.comissao = comissao;
-	}
+        this.comissao = comissao;
+    }
+
 }

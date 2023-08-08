@@ -1,17 +1,18 @@
-package semana17;
+package semana17.Vendedor;
 
-public class VendedorFixo extends Vendedor{
+public class VendedorFixo extends Vendedor {
 
     private double salario;
 
+
     public VendedorFixo(String nome, double vendas, double comissao, double salario) {
-        super (nome, vendas, comissao);
+        super(nome, vendas, comissao);
         this.salario = salario;
     }
 
     @Override
-    public double obterSalario() {
-        return (vendas * (comissao/100)) + salario;
+    public double obterSalario(){
+        return (vendas * (comissao / 100) + salario);
     }
 
     public double getSalario() {
@@ -19,6 +20,6 @@ public class VendedorFixo extends Vendedor{
     }
 
     public void setSalario(double salario) {
-		this.salario = salario;
+        this.salario = salario;
     }
 }
