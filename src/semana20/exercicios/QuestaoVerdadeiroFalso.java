@@ -1,10 +1,10 @@
 package semana20.exercicios;
 
-public class VerdadeiroFalso extends Questao{
+public class QuestaoVerdadeiroFalso extends Questao{
     private boolean respostaCorreta;
 
 
-    public VerdadeiroFalso(int numero, String enunciado, boolean respostaCorreta) {
+    public QuestaoVerdadeiroFalso(int numero, String enunciado, boolean respostaCorreta) {
         super(numero, enunciado);
         this.respostaCorreta = respostaCorreta;
     }
